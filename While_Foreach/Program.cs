@@ -7,25 +7,27 @@ namespace While_Foreach
         static void Main(string[] args)
         {
             Console.WriteLine("Sayı giriniz :");
-            int a = int.Parse(Console.ReadLine());
-            int b = 1;
+            int sayi = int.Parse(Console.ReadLine());
+            int sayac = 1;
             int c = 0;
-            while (b <= a)
+            while (sayac <= sayi)
             {
-                c += b;
-                b++;
+                c += sayac;
+                sayac++;
             }
-            Console.WriteLine(c / a);
+            Console.WriteLine(c / sayi);
+
             Console.WriteLine("--------------------------");
-            char e = 'a';
-            while (e < 'z')
+            char character = 'a';
+            while (character < 'z')
             {
-                Console.WriteLine(e);
-                e++;
+                Console.WriteLine(character);
+                character++;
 
             }
             Console.WriteLine("--------------------------");
-            string[] ogrenciler = { "Ali", "Ahmet", "Ayşe", "Aylin" };
+            
+            string[] ogrenciler = { "Mert", "Merve", "Funda", "Kerem" };
 
             foreach (var i in ogrenciler)
             {
